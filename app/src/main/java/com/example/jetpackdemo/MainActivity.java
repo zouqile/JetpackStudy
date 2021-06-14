@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.jetpackdemo.databinding.DatabindingActivity;
+import com.example.jetpackdemo.lifecycles.LifeCyclesActivity;
 import com.example.jetpackdemo.livedata.LivedataActivity;
 import com.example.jetpackdemo.navigation.NavigationActivity;
 import com.example.jetpackdemo.navviewmodel.NavVMActivity;
@@ -50,6 +51,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, NavVMActivity.class);
         startActivity(intent);
     }
+
+    public void lifecycles(View view) {
+        Intent intent = new Intent(MainActivity.this, LifeCyclesActivity.class);
+        startActivity(intent);
+    }
+
+
+
 
 
 }
