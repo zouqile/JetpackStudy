@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jetpackdemo">
-        <activity android:name=".navigation.NavigationActivity"></activity>
+        <activity android:name=".navviewmodel.NavVMActivity"></activity>
+        <activity android:name=".navigation.NavigationActivity" />
         <activity android:name=".savestate.SaveStateActivity" />
         <activity android:name=".databinding.DatabindingActivity" />
         <activity android:name=".livedata.LivedataActivity" />

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_nav_viewmodel"
+    app:startDestination="@id/nav1Fragment">
+
+    <fragment
+        android:id="@+id/nav1Fragment"
+        android:name="com.example.jetpackdemo.navviewmodel.Nav1Fragment"
+        android:label="fragment_nav1"
+        tools:layout="@layout/fragment_nav1" />
+    <fragment
+        android:id="@+id/nav2Fragment"
+        android:name="com.example.jetpackdemo.navviewmodel.Nav2Fragment"
+        android:label="fragment_nav2"
+        tools:layout="@layout/fragment_nav2" />
+</navigation>

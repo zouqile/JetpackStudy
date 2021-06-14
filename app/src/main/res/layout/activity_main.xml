@@ -41,6 +41,12 @@
             android:text="navigation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+        <Button
+            android:onClick="navvm"
+            android:text="navvm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
 
 
 
