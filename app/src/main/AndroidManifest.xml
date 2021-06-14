@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jetpackdemo">
-        <activity android:name=".databinding.DatabindingActivity"></activity>
+        <activity android:name=".savestate.SaveStateActivity"></activity>
+        <activity android:name=".databinding.DatabindingActivity" />
         <activity android:name=".livedata.LivedataActivity" />
         <activity android:name=".viewmodel.ViewModelActivity" />
         <activity android:name=".MainActivity">

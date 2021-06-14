@@ -7,22 +7,40 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-<Button
-    android:onClick="viewmodel"
-    android:text="viewmodel"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="viewmodel"
+            android:text="viewmodel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <Button
-        android:onClick="livedata"
-        android:text="livedata"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:onClick="dataBinding"
-        android:text="dataBinding"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            android:onClick="livedata"
+            android:text="livedata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:onClick="dataBinding"
+            android:text="dataBinding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:onClick="savestate"
+            android:text="savestate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
+
 
 
 

@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.example.jetpackdemo.databinding.DatabindingActivity;
 import com.example.jetpackdemo.livedata.LivedataActivity;
+import com.example.jetpackdemo.savestate.SaveStateActivity;
 import com.example.jetpackdemo.viewmodel.ViewModelActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, DatabindingActivity.class);
         startActivity(intent);
     }
+    public void savestate(View view) {
+        Intent intent = new Intent(MainActivity.this, SaveStateActivity.class);
+        startActivity(intent);
+    }
+
 
 
 }
