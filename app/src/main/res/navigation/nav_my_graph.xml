@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_my_graph"
-    app:startDestination="@id/detailFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/detailFragment"
@@ -30,4 +30,9 @@
             app:popEnterAnim="@anim/fragment_close_enter"
             app:popExitAnim="@anim/fragment_close_exit" />
     </fragment>
+    <fragment
+        android:id="@+id/paramFragment"
+        android:name="com.example.jetpackdemo.navigation.ParamFragment"
+        android:label="fragment_param"
+        tools:layout="@layout/fragment_param" />
 </navigation>

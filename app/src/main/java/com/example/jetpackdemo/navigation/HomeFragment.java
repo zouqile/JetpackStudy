@@ -39,5 +39,18 @@ public class HomeFragment extends Fragment {
 
             }
         });
+
+        getView().findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //传递参数
+                NavController navController = Navigation.findNavController(view);
+                Bundle bundle = new Bundle();
+                bundle.putString(ParamFragment.KEY_name, "test11");
+                navController.navigate(R.id.paramFragment, bundle);
+
+            }
+        });
+
     }
 }
