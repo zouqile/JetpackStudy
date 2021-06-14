@@ -1,15 +1,19 @@
 package com.example.jetpackdemo.databinding;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.view.View;
 
 import com.example.jetpackdemo.R;
 
 public class DatabindingActivity extends AppCompatActivity {
+
+    private static final String Onsaveinstancestate_key_age = "age";
 
     ActivityDatabindingBinding binding;
     StudentLDVM studentLDVM;
@@ -21,6 +25,9 @@ public class DatabindingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_databinding);
         studentLDVM = new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(StudentLDVM.class);
+        if (savedInstanceState != null && savedInstanceState.containsKey(Onsaveinstancestate_key_age)) {
+            studentLDVM.getAgeLD().setValue(savedInstanceState.getInt(Onsaveinstancestate_key_age));
+        }
         binding.setData(studentLDVM);
         binding.setLifecycleOwner(this);
         //
@@ -45,5 +52,13 @@ public class DatabindingActivity extends AppCompatActivity {
                 studentBind.setName("test");
             }
         });
+    }
+
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(Onsaveinstancestate_key_age, studentLDVM.getAgeLD().getValue());
+
     }
 }
