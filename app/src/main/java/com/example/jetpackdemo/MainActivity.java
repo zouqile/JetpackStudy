@@ -11,6 +11,7 @@ import com.example.jetpackdemo.lifecycles.LifeCyclesActivity;
 import com.example.jetpackdemo.livedata.LivedataActivity;
 import com.example.jetpackdemo.navigation.NavigationActivity;
 import com.example.jetpackdemo.navviewmodel.NavVMActivity;
+import com.example.jetpackdemo.room.RoomActivity;
 import com.example.jetpackdemo.savestate.SaveStateActivity;
 import com.example.jetpackdemo.viewmodel.ViewModelActivity;
 
@@ -54,6 +55,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void lifecycles(View view) {
         Intent intent = new Intent(MainActivity.this, LifeCyclesActivity.class);
+        startActivity(intent);
+    }
+
+    public void room(View view) {
+        Intent intent = new Intent(MainActivity.this, RoomActivity.class);
         startActivity(intent);
     }
 
