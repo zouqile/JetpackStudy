@@ -2,6 +2,7 @@ package com.example.jetpackdemo.room;
 
 import java.util.List;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -24,4 +25,7 @@ public interface StudentDao {
 
     @Query("SELECT * from student  ORDER BY ID DESC")
     List<StudentEntity> getAll();
+
+    @Query("SELECT * from student  ORDER BY ID DESC")
+    LiveData<List<StudentEntity>> getAllLive();
 }

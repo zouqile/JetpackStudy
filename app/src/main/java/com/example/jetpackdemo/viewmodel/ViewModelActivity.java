@@ -24,7 +24,7 @@ public class ViewModelActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_model);
-        studentVM = new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(StudentVM.class);
+        studentVM = new ViewModelProvider(this, new ViewModelProvider.AndroidViewModelFactory(getApplication())).get(StudentVM.class);
         textView = findViewById(R.id.textView);
         textView1 = findViewById(R.id.textView1);
         button = findViewById(R.id.button);
