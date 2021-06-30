@@ -23,6 +23,9 @@ public class StudentEntity {
     //可以不声明列的名称，按字段名称
     private int age;
 
+
+    private int test;
+
     public int getId() {
         return id;
     }
@@ -45,5 +48,14 @@ public class StudentEntity {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+
+    public int getTest() {
+        return test;
+    }
+
+    public void setTest(int test) {
+        this.test = test;
     }
 }
